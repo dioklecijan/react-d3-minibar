@@ -18,9 +18,9 @@ export default class Minibar extends React.Component {
     let margin = { top: 10, right: 10, bottom: 10, left: 100 };
     let width = svg.attr("width") - margin.left - margin.right;
     let height = svg.attr("height") - margin.top - margin.bottom;
-    
-    svg.selectAll('g').remove();
-    
+
+    svg.selectAll("g").remove();
+
     let g = svg
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
